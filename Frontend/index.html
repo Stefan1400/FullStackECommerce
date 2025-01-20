@@ -4,8 +4,46 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   <link href="output.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+   <nav class='fixed left-0 top-0 w-full z-[10000] bg-white p-3 pb-4 flex items-center justify-between'>
+      <div class='flex gap-1 justify-around items-center flex-col w-[35px] h-[17px]'>
+         <div class='bg-black w-full h-[1.25px]'></div>
+         <div class='bg-black w-full h-[1.25px]'></div>
+      </div>
+      
+      <div class='text-black text-[1.4rem] font-extralight'>HANAKUKKA</div>
+      
+      <div class='flex justify-between gap-4 items-center '>
+         <svg width="15" height="15" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path strokeWidth="1.5" d="M16.7394 8.19133C16.7394 12.4154 13.1284 15.8827 8.61972 15.8827C4.111 15.8827 0.5 12.4154 0.5 8.19133C0.5 3.96724 4.111 0.5 8.61972 0.5C13.1284 0.5 16.7394 3.96724 16.7394 8.19133Z" stroke="black"/>
+            <line strokeWidth="1.5" y1="-0.5" x2="9.72905" y2="-0.5" transform="matrix(0.724891 0.688864 -0.724891 0.688864 13.9453 14.2969)" stroke="black"/>
+         </svg>
+         <svg width="15" height="17" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="7.21875" y="0.5" width="6.56" height="4" stroke="black" strokeWidth="1.10"/>
+            <rect x="0.5" y="4.5" width="20" height="16" stroke="black" strokeWidth="1.10"/>
+         </svg>
+      </div>
+         <!-- <svg class='justify-center items-center w-full mt-2'  
+            width="20" height="20" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.646447" y1="21.6464" x2="21.6464" y2="0.646447" stroke="black"/>
+            <line x1="1.35355" y1="0.646447" x2="22.3536" y2="21.6464" stroke="black"/>
+         </svg> -->
+         <div class='p-1 m-0 absolute left-[0] top-[2.75rem] flex justify-center items-center w-full text-[0.75rem] font-semibold bg-white'>
+            <h2>ARTISTIC KEYCHAINS</h2>
+         </div>
+   </nav>
+
+   <video class="absolute top-[5rem] flex flex-row justify-center items-center w-[100vw] h-[80vh]" src="./Assets/Videos/heroVideo.mp4" muted autoplay loop></video>
    
+   <script src="script.js"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
