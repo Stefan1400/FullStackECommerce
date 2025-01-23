@@ -13,20 +13,23 @@
    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-   <nav class='fixed left-0 top-0 w-full z-[10000] bg-white p-3 pb-4 flex items-center justify-between'>
-      <div class='flex gap-1 justify-around items-center flex-col w-[35px] h-[17px]'>
+
+<!-- NAVBAR -->
+
+   <nav class='fixed left-0 top-0 w-full z-[100000] bg-white p-3 pb-4 flex items-center justify-between'>
+      <div id="menuIcon" class='flex gap-1 justify-around items-center flex-col w-[35px] h-[17px]'>
          <div class='bg-black w-full h-[1.25px]'></div>
          <div class='bg-black w-full h-[1.25px]'></div>
       </div>
       
-      <div class='text-black text-[1.4rem] font-extralight'>HANAKUKKA</div>
+      <div id="logo" class='text-black text-[1.4rem] font-extralight'>HANAKUKKA</div>
       
       <div class='flex justify-between gap-4 items-center '>
-         <svg width="15" height="15" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg id="searchIcon" width="15" height="15" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path strokeWidth="1.5" d="M16.7394 8.19133C16.7394 12.4154 13.1284 15.8827 8.61972 15.8827C4.111 15.8827 0.5 12.4154 0.5 8.19133C0.5 3.96724 4.111 0.5 8.61972 0.5C13.1284 0.5 16.7394 3.96724 16.7394 8.19133Z" stroke="black"/>
             <line strokeWidth="1.5" y1="-0.5" x2="9.72905" y2="-0.5" transform="matrix(0.724891 0.688864 -0.724891 0.688864 13.9453 14.2969)" stroke="black"/>
          </svg>
-         <svg width="15" height="17" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg id="cartIcon" width="15" height="17" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="7.21875" y="0.5" width="6.56" height="4" stroke="black" strokeWidth="1.10"/>
             <rect x="0.5" y="4.5" width="20" height="16" stroke="black" strokeWidth="1.10"/>
          </svg>
@@ -36,13 +39,81 @@
             <line x1="0.646447" y1="21.6464" x2="21.6464" y2="0.646447" stroke="black"/>
             <line x1="1.35355" y1="0.646447" x2="22.3536" y2="21.6464" stroke="black"/>
          </svg> -->
-         <div class='p-1 m-0 absolute left-[0] top-[2.75rem] flex justify-center items-center w-full text-[0.75rem] font-semibold bg-white'>
+
+         <!-- <div class='p-1 m-0 absolute left-[0] top-[2.75rem] flex justify-center items-center w-full text-[0.75rem] font-semibold bg-white'>
             <h2>ARTISTIC KEYCHAINS</h2>
-         </div>
+         </div> -->
    </nav>
 
-   <video class="absolute top-[5rem] flex flex-row justify-center items-center w-[100vw] h-[80vh]" src="./Assets/Videos/heroVideo.mp4" muted autoplay loop></video>
+<!-- HOMEPAGE    -->
+
+   <div class="absolute left-0 top-[5.5rem] flex w-full flex-col gap-5 justify-between items-center z-[1]">
+      <!-- <video class="w-[100vw] h-[50vh]" src="./Assets/Videos/heroVideo.mp4" muted autoplay loop></video> -->
+      <div id="new-creations-link-home" class="flex flex-col justify-between items-center">
+         <img class="w-[80vw] object-cover h-[65vh] flex" src="./Assets/Images/Keychains/confettiDisplay.jpg" alt="confettiImage">
+         <h2 class="w-full p-3 text-center text-black font-semibold text-[1rem]">NEW CREATIONS</h2>
+         <p class="underline underline-offset-2 text-[0.9rem]">SHOP</p>
+      </div>
+   </div>
+
+<!-- SEARCH PAGE -->
    
+   <div id="searchPage" class='px-10 pt-8 top-[2.75rem] flex justify-start items-center flex-col gap-[5rem] transition-all duration-300 ease-in-out fixed left-0 w-full h-full bg-white z-[1000] overflow-hidden'>
+      <label class='border-b-[1.5px] border-black pt-8 flex w-full justify-center items-center' htmlFor="search-input">
+         <input id='search-input' value='' class='outline-none pb-2 text-gray-500 text-start w-full text-[0.75rem]' type="text" placeholder='SEARCH' />
+            <!-- <svg class='mb-1' width="17" height="17" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <line x1="0.646447" y1="21.6464" x2="21.6464" y2="0.646447" stroke="black"/>
+               <line x1="1.35355" y1="0.646447" x2="22.3536" y2="21.6464" stroke="black"/>
+            </svg> -->
+      </label>
+      <!-- <div class='flex justify-between flex-col items-start w-full gap-4'>
+         <h3 class=' font-bold text-xs'>POPULAR SEARCHES</h3>
+         <ul class='flex items-center justify-between gap-7'>
+            <li class='text-xs'>GALAXY</li>
+            <li class='text-xs'>MENS</li>
+            <li class='text-xs'>NEW</li>
+         </ul>
+      </div> -->
+   </div>
+
+<!-- MENU PAGE -->
+
+   <div id="menuPage" class="px-10 pt-8 top-[2.75rem] flex justify-start items-center flex-col gap-[5rem] transition-all duration-300 ease-in-out fixed left-0 w-full h-full bg-white z-[1000] overflow-hidden">
+      <ul class='flex px-[3.5rem] absolute justify-between items-center flex-col w-full h-1/3 top-[4rem]  bg-transparent'>
+         <li class='text-black font-medium'>HOME</li>
+         <li id="new-creations-link-menu" class='text-black font-medium'>NEW CREATIONS</li>
+         <li class='text-black font-medium'>MENS</li>
+         <li class='text-black font-medium'>WOMENS</li>
+         <li class='text-black font-medium'>LOGIN</li>
+      </ul>
+   </div>
+
+<!-- CART PAGE -->
+   <div id="cartPage" class='pb-0 flex flex-col pt-[13rem] gap-3 w-full h-[195vh] absolute top-[3rem] left-0 z-[1000] bg-white'>
+      <h1 class='text-center text-[0.9rem]'>YOU'RE CART IS CURRENTLY EMPTY</h1>
+      <p class='text-[0.725rem] text-center underline underline-offset-[3px]'>CONTINUE SHOPPING</p>
+   </div>
+
+<!-- NEW CREATIONS PAGE -->
+
+   <div id="new-creations-page" class="pt-11 top-[2.85rem] flex justify-start items-center flex-col gap-[5rem] transition-all duration-300 ease-in-out fixed left-0 w-full h-full bg-white z-[500] overflow-hidden">
+      <div class="bg-white w-full h-1/2 flex flex-col justify-evenly items-center gap-5">
+         <img data-price="20" id="galaxy" class="products object-cover w-[50vw] h-[40vh]" src="./Assets/Images/Keychains/galaxyDisplay.jpg" alt="galaxy">
+         <img data-price="19" id="confetti" class="products object-cover w-[50vw] h-[40vh]" src="./Assets/Images/Keychains/confettiDisplay.jpg" alt="confetti">
+      </div>
+   </div>
+
+<!-- PRODUCT PAGE -->
+
+   <div id="productPage" class="px-10 pt-8 top-[2.75rem] flex justify-start items-center flex-col gap-[2rem] transition-all duration-300 ease-in-out fixed left-0 w-full h-full bg-white z-[750] overflow-scroll">
+      <img class="image" src="#" alt="product image">
+      <div class="flex flex-row justify-between items-center w-full">
+         <h3 class="name">NAME</h3>
+         <p class="price">PRICE</p>
+      </div>
+      <button class="add-to-cart w-full mb-3 border-b-white border-b-[1px] bg-[#191919] p-3 text-white font-semibold">ADD TO CART</button>
+   </div>
+
    <script src="script.js"></script>
    <script src="https://cdn.tailwindcss.com"></script>
 </body>

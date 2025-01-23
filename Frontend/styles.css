@@ -9,3 +9,27 @@ body {
    width: 100vw;
    height: 100vh;
 }
+
+#searchPage, #menuPage, #cartPage, #new-creations-page, #productPage {
+   display: none;
+}
+
+#searchPage.visible, #menuPage.visible, #cartPage.visible, #new-creations-page.visible, #productPage.visible {
+   display: flex;
+}
+
+.add-to-cart.added {
+   color: #191919;
+   border: 1px solid #191919;
+   background-color: #ECECEC;
+}
+
+/* .add-to-cart.removed {
+   color: white;
+   border: 1px solid white;
+   background-color: #191919;
+} */
+
+/* #searchPage.onTop, #menuPage.onTop, #cartPage.onTop, #new-creations-page.onTop {
+   z-index: 5000;
+} */
